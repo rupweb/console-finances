@@ -1,6 +1,9 @@
 # console-finances
 Bootcamp Javascript challenge
 
+### Page location
+See http://rupweb.github.io/console-finances/ 
+
 ### Instructions to run Jest
 
 Jest is a Javascript test framework
@@ -24,5 +27,4 @@ Update `package.json` to configure Javascript tests
 ### Troubleshooting
 
 If you get error `Cannot find module '@babel/preset-env'` then you may need a symbolic link.
-For example `mklink /D .\node_modules C:\NodeJs\node_modules`
-
+<br>For example `mklink /D .\node_modules C:\NodeJs\node_modules`
