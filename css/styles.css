@@ -1,12 +1,8 @@
-#resultsList {
-    list-style-type: none; /* Removes default bullet points */
-    padding: 0;
-    font-family: Arial, sans-serif;
+/* Classes for specific colors */
+.text-green {
+    color: green;
 }
-
-#resultsList li {
-    background-color: #f2f2f2; /* Light grey background */
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px; /* Rounded corners for each list item */
+  
+.text-red {
+    color: red;
 }

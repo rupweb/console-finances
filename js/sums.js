@@ -9,7 +9,10 @@ function net_pnl() {
     for (var i = 0; i < finances.length; i++) {
         net_pnl += finances[i][1];
     }
-    return net_pnl;
+
+    // Format the result as readable
+    const formatted_net_pnl = net_pnl.toLocaleString();
+    return `$${formatted_net_pnl}`;
 }
 
 function average_change() {
@@ -19,7 +22,9 @@ function average_change() {
     }
 
     const av = average_change / (finances.length - 1);
-    return Number(av.toFixed(2));
+    const formatted_av = Number(av.toFixed(2)).toLocaleString();
+
+    return `$${formatted_av}`;
 }
 
 function greatest_increase() { 
@@ -31,7 +36,8 @@ function greatest_increase() {
             greatest_increase_month = finances[i][0];
         }
     }
-    return greatest_increase_month + ' ($' + greatest_increase + ')';
+
+    return greatest_increase_month + ' ($' + greatest_increase.toLocaleString() + ')';
 }
 
 function greatest_decrease() { 
@@ -43,7 +49,7 @@ function greatest_decrease() {
             greatest_decrease_month = finances[i][0];
         }
     }
-    return greatest_decrease_month + ' ($' + greatest_decrease + ')';
+    return greatest_decrease_month + ' ($' + greatest_decrease.toLocaleString() + ')';
 }
 
 export { count_months, net_pnl, average_change, greatest_increase, greatest_decrease };
